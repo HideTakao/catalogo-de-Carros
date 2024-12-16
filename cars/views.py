@@ -10,7 +10,7 @@ from django.urls import reverse_lazy
 
 class CarsListView(ListView):
     model = Car
-    template_name = 'Cars.html'
+    template_name = 'cars.html'
     context_object_name = 'cars'
     def get_queryset(self):
         cars = super().get_queryset().order_by('model')
